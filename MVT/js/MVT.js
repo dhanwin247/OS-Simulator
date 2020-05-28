@@ -48,7 +48,7 @@ $(document).ready(function() {
     if (confirm) {
       $('#data-input-content-1').fadeOut('fast');
     }
-    location.href = "index.html";
+    location.href = "mvt2.html";
     console.log(totalMemory);
   })
   //}
