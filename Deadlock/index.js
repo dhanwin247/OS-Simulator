@@ -1,7 +1,7 @@
 var res, pro;
 var resource;
 
-function BuildFormFields($amount) // For Resorce allocation
+function BuildFormFields($amount) // For Resource allocation
 {
 
   res = $amount;
