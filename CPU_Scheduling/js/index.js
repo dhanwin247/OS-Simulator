@@ -46,7 +46,7 @@ function addToList() {
     "ct": 0,
     "valid": 0
   });
-  //window.alert("You submitted!");
+  
   index = index + 1;
   displayList();
   document.getElementById("newat").value = "";
@@ -55,15 +55,15 @@ function addToList() {
 
 function displayList() {
   var inp = document.getElementById("showinput");
-  //inp.setAttribute("style", "height:" + p.length * 80 + "px");
+ 
   inp.innerHTML = "";
   for (var i = 0; i < p.length; i++) {
     var card = document.createElement("div");
-    //card.setAttribute("class", "card");
+   
     var pid = document.createElement("div");
     pid.textContent = "P" + (i + 1) + "    ";
     pid.setAttribute("style", "float:left;margin-left:20px;");
-    //card.setAttribute("style", "float:left;");
+   
     card.setAttribute("style", "width:800px;height: 50px;");
     var input1 = document.createElement("input");
     input1.value = p[i].at;
@@ -83,7 +83,7 @@ function displayList() {
     btn.setAttribute("id", "btn" + i);
     btn.setAttribute("class", "btn btn-warning");
     btn.setAttribute("onclick", "edit(this.id)");
-    //btn.setAttribute("style", "float:right;margin-right:50px;");
+    
     var br = document.createElement("br");
     card.appendChild(pid);
     //card.appendChild(pid);
