@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MVT-1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../Intro/css/bootswatch.css" />
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typeit.js"></script>
+  <script src="js/MVT.js"></script>
+  <script src="js/typed.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="../Intro/home.html">Home</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../CPU_Scheduling/index.html">CPU Scheduling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Disk/disk_schedule.html">Disk Scheduling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Deadlock/index.html">Deadlock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../File_System/index.html">File System</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../MFT/index.html">Fixed Partitioning(MFT)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../MVT/index.html">Variable Partitioning(MVT)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Page/pg.html">Paging</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Page/index.html">Page Replacement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Process_Synchronization/index.html">Process Synchronization</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="jumbotron">
+
+      <a href="../MFT/index.html"><img src="../Intro/css/left.png" style="height: 40px;width: 40px;position: absolute; top: 200px;left: 0px;"></img></a>
+      <a href="../Page/pg.html"><img src="../Intro/css/right.png" style="height: 40px;width: 40px;position: absolute; top: 200px;right: 0px;"></img></a>
+
+      <h1 class="display-3">MVT</h1>
+      <p class="lead">Multiprogramming with Variable Tasks</p>
+      <hr class="my-4">
+      <p>In the MVT scheme, the OS keeps track of which parts of memory are available and which are occupied. Initially, all memory is available for user processes and is considered one large block of available memory, a hole. Eventually, as the
+        processes start entering and leaving the memory,there will be a set of holes of various sizes.</p>
+    </div>
+    <div id="data-input-content-1">
+      <h2 style="margin-left:400px;"> Enter the following details: </h2> </br>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label style="margin-left:390px; font-size:20px;" class="control-label col-sm-2" for="memorySize"> Total Memory: </label>
+          <div class="col-sm-4">
+            <input style="margin-left:390px;" type="number" class="form-control" id="memory" placeholder="Enter total memory size in bytes" required min="1">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button style="margin-left:407px;" id="input-memory-submit" value="next" class="btn btn-danger" align="center">Next</button>
+        </div>
+      </form>
+    </div>
+
+</body>
+
+</html>

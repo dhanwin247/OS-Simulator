@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+
+<head>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../Intro/css/bootswatch.css" />
+
+  <!-- JavaScript Files -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typeit.js"></script>
+  <script src="js/MVT.js"></script>
+  <script src="js/typed.js"></script>
+  <title>MVT-2</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a style="font-size:20px" class="navbar-brand" href="../Intro/home.html">Home</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../CPU_Scheduling/index.html">CPU Scheduling</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../Disk/disk_schedule.html">Disk Scheduling</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../Deadlock/index.html">Deadlock</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../File_System/index.html">File System</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../MFT/index.html">MFT</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../MVT/index.html">MVT</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../Page/pg.html">Paging</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../Page/index.html">Page Replacement</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size:15px" class="nav-link" href="../Process_Synchronization/index.html">Process Synchronization</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <h1 style="font-size:80px" align="center">MVT <br> </h1>
+  <p style="font-size:20px; margin-left:100px; margin-right:100px;">First, select an <em>allocation strategy</em>. Then, <em>add processes</em> one by one. All the changes will be relected in the <em>output table. </em>. If allocation status is
+    <strong>true</strong>, then the process resides in main memory. If it is <strong>false</strong>, the process could not be allocated memory. A <strong>tick mark</strong> indicates a process that has freed its space (i.e it does not reside in
+    memory anymore).</p>
+  <p style="font-size:20px; margin-left:100px; margin-right:100px;">To free a process, click on that process in the <em>main memory diagram.</em></p><br>
+  <button style="margin-right:60px; margin-left:450px; font-size:20px;" type="button" id="first-fit-select" class="btn btn-success">First Fit</button>
+  <button style="margin-right:60px;font-size:20px;" type="button" id="best-fit-select" class="btn btn-primary">Best Fit</button>
+  <button style="margin-right:60px;font-size:20px;" type="button" id="worst-fit-select" class="btn btn-info">Worst Fit</button>
+  <br><br>
+
+  <div id="demo-box">
+    <div class="col-sm-6" id="left-box">
+      <div class="col-sm-6">
+        <br>
+        <h4>Main Memory</h4>
+        <div id="block-0">
+          <div id="block--1"> </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <br>
+        <button class="btn" id="add-process-button" style="margin-top: 28px; background-color: #8E44AD; font-size:15px">Add Process</button>
+      </div>
+    </div>
+    <div class="col-sm-6" id="right-box">
+      <br>
+      <h3 style="font-size:25px">Output Table</h3>
+      <br>
+      <table class="table table-striped" id="output-table">
+        <thead style="background-color: #99A3A4;">
+          <tr>
+            <th style="font-size:20px">Process No.</th>
+            <th style="font-size:20px">Process Size</th>
+            <th style="font-size:20px">Allocation Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
